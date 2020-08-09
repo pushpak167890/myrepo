@@ -19,8 +19,9 @@ sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
 
 sudo apt install unzip wget
 cd /tmp
+sudo wget http://apachemirror.wuchna.com/tomcat/tomcat-9/v9.0.37/bin/apache-tomcat-9.0.37.zip
 unzip apache-tomcat-*.zip
-sudo mv apache-tomcat-9.0.33/* /opt/tomcat/
+sudo mv apache-tomcat-9.0.37/* /opt/tomcat/
 sudo ln -s /opt/tomcat /opt/tomcat/latest
 sudo chown -R tomcat: /opt/tomcat
 sudo sh -c 'chmod +x /opt/tomcat/latest/bin/*.sh'

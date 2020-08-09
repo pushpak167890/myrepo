@@ -32,9 +32,7 @@ source ~/.bashrc
 
 #Create Systemd unit file
 
-sudo nano /etc/systemd/system/tomcat.service
-
-[Unit]
+sudo echo "[Unit]
 Description=Tomcat 9 servlet container
 After=network.target
 
@@ -52,7 +50,7 @@ ExecStart=/opt/tomcat/latest/bin/startup.sh
 ExecStop=/opt/tomcat/latest/bin/shutdown.sh
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=multi-user.target > /etc/systemd/system/tomcat.service
 
 sudo systemctl daemon-reload
 sudo systemctl start tomcat

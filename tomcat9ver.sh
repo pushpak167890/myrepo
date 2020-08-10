@@ -18,8 +18,11 @@ sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
 #Download and Install Tomcat 9 on Ubuntu 18.04
 
 sudo apt install unzip wget
+
 cd /tmp
+
 sudo wget http://apachemirror.wuchna.com/tomcat/tomcat-9/v9.0.37/bin/apache-tomcat-9.0.37.zip
+
 unzip apache-tomcat-*.zip
 
 sudo mv apache-tomcat-9.0.37/* /opt/tomcat/
@@ -33,6 +36,7 @@ sudo sh -c 'chmod +x /opt/tomcat/latest/bin/*.sh'
 #Configure Environment variables
 
 echo "export CATALINA_HOME="/opt/tomcat"" >> ~/.bashrc
+
 source ~/.bashrc
 
 #Create Systemd unit file

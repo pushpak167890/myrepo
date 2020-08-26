@@ -3,7 +3,7 @@
 #Install Java
 
 sudo apt update
-sudo apt install default-jdk
+sudo apt install default-jdk -y
 
 
 #Creating directory
@@ -17,7 +17,7 @@ sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
 
 #Download and Install Tomcat 9 on Ubuntu 18.04
 
-sudo apt install unzip wget
+sudo apt install unzip wget -y
 
 cd /tmp
 

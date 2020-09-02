@@ -67,10 +67,11 @@ sudo systemctl daemon-reload
 
 sudo systemctl start tomcat
 
-sudo systemctl status tomcat
-
-sudo systemctl enable tomcat
-
 #Adjust the Firewall
 
-sudo ufw allow 8080/tcp
+sudo ufw enable
+sudo ufw allow 8080
+
+sudo systemctl enable tomcat
+sudo systemctl status tomcat.service
+sudo systemctl restart tomcat.service

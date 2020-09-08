@@ -71,6 +71,8 @@ sudo systemctl start tomcat
 
 sudo ufw enable
 
+sudo  ufw allow 22
+
 sudo ufw allow 8080
 
 sudo systemctl start tomcat

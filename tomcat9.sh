@@ -78,5 +78,3 @@ sudo ufw allow 8080
 sudo systemctl start tomcat
 
 sudo systemctl restart tomcat
-
-sudo systemctl stop tomcat
